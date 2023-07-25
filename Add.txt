@@ -1,3 +1,59 @@
 git clone <path from SSH key; remember paraphase key: Amit; type: yes; >
 
 git add.
+
+
+
+amitt@RATH0RE MINGW64 ~/OneDrive/Desktop/Learning/Git/Coding (main)
+$ git add .
+
+amitt@RATH0RE MINGW64 ~/OneDrive/Desktop/Learning/Git/Coding (main)
+$ git push origin main
+Enter passphrase for key '/c/Users/amitt/.ssh/id_ed25519':
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 354 bytes | 177.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:amitsinghrathor/Coding.git
+   cf0a8a5..8dfe15d  main -> main
+
+amitt@RATH0RE MINGW64 ~/OneDrive/Desktop/Learning/Git/Coding (main)
+$ git pull origin main
+Enter passphrase for key '/c/Users/amitt/.ssh/id_ed25519':
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 744 bytes | 57.00 KiB/s, done.
+From github.com:amitsinghrathor/Coding
+ * branch            main       -> FETCH_HEAD
+   8dfe15d..ee5445c  main       -> origin/main
+Updating 8dfe15d..ee5445c
+Fast-forward
+ new.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 new.txt
+
+amitt@RATH0RE MINGW64 ~/OneDrive/Desktop/Learning/Git/Coding (main)
+$ git branch
+* main
+
+amitt@RATH0RE MINGW64 ~/OneDrive/Desktop/Learning/Git/Coding (main)
+$ git branch main2
+
+amitt@RATH0RE MINGW64 ~/OneDrive/Desktop/Learning/Git/Coding (main)
+$ git branch
+* main
+  main2
+
+amitt@RATH0RE MINGW64 ~/OneDrive/Desktop/Learning/Git/Coding (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+amitt@RATH0RE MINGW64 ~/OneDrive/Desktop/Learning/Git/Coding (main)
+$
